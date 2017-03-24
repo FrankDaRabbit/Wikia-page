@@ -1,0 +1,79 @@
+textarea {
+	width: 400px;
+	height: 100px;
+	background-color: #fff;
+	resize: none;
+}
+button {
+	width: 100px;
+	height: 20px;
+	border: none;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	font-family: arial;
+	font-weight: 400;
+
+	margin-bottom: 20px;
+	position: relative;
+
+
+
+}
+.comment-box {
+	background-color: lightgray;
+	width: 815px;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 4px;
+	color: black;
+	position: relative;
+
+}
+.edit-form {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+.edit-form button {
+	
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+
+}
+.edit-form button:hover {
+	
+	color: #282828;
+	background-color: #fff;
+	opacity: 1;
+
+}
+
+.delete-form {
+	position: absolute;
+	top: 0px;
+	right: 120px;
+
+}
+.delete-form button {
+	
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+
+}
+.delete-form button:hover {
+	
+	color: #282828;
+	background-color: #fff;
+	opacity: 1;
+
+}
+.commentmessage {
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}

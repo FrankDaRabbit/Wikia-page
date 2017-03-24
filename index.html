@@ -1,0 +1,35 @@
+<?php
+	date_default_timezone_set('Europe/Vienna');
+	include 'dbh.inc.php';
+	include 'comments.inc.php';
+
+
+?>
+
+<!doctype html>
+
+<html >
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  
+</head>
+
+<body>
+	<?php
+	echo "
+  <form method='POST' action='".setComments($conn)."'>
+  	<input type='hidden' name='uid' value='Anon'>
+  	<input type='hidden' name='date' value='".date('Y-m-d H:m:s')."'>
+  	<textarea name='message' ></textarea><br>
+  	<button class='btn btn-default' type='submit' name='commentSubmit'>Comment</button>
+
+
+  </form>";
+  getComments($conn);
+  ?>
+</body>
+</html>
